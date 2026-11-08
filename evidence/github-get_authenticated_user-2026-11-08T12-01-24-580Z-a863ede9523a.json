@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "provider": "github",
+  "operation": "get_authenticated_user",
+  "mode": "local",
+  "level": "Live",
+  "method": "provider-operation",
+  "outcome": "succeeded",
+  "executedAt": "2026-11-08T12:01:24.580Z",
+  "sourceRevision": "ae9ccb061087c1ae366e81ae9f81a6ff944c49fccdacbafa5dc6bd83ff8b5615",
+  "registryDigest": "b72bc406889173b0836fbd29b9288b34021ec2cae749f46a3c2bd336ce031ec4",
+  "runtimeDigest": "473ea219361bd1546576363474dfbe9e4a3a4f1974fcd3ca43be4c0c2ec9ae9c",
+  "responseDigest": "a863ede9523aa9c819f071058f428a5a3e8d7345b00eb29519d1c26e0ed5e66a",
+  "requestId": "DE1E:166BFE:14F1CF:1F5473:6AF06494",
+  "httpStatus": 200,
+  "transport": "native-https-fetch",
+  "credentialSource": "existing-gh-keyring",
+  "readOnly": true,
+  "receiptRef": "state/evidence/github-get_authenticated_user-2026-11-08T12-01-24-580Z-a863ede9523a.json"
+}
