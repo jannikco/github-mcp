@@ -1,0 +1,59 @@
+{
+  "id": "repository-triage",
+  "repositoryId": "github-mcp",
+  "product": "pipmcp",
+  "connectorId": "github",
+  "title": "Prepare a GitHub issue triage brief",
+  "promise": "Focus the next engineering review on issues waiting longest.",
+  "sourceRevision": "2179869a6622866b544d1b7e813eb7512db089ab0c3b100fc007f8517a4054f6",
+  "credential": "PIPMCP_API_KEY",
+  "transport": "pipmcp-gateway",
+  "sourceRefs": [
+    "https://raw.githubusercontent.com/github/rest-api-description/main/descriptions/api.github.com/api.github.com.yaml"
+  ],
+  "readTask": {
+    "intent": "Focus the next engineering review on issues waiting longest.",
+    "requiredCapability": "Read-only authorized account data; discover actual names and schemas first"
+  },
+  "synthetic": {
+    "strategy": "score",
+    "field": "daysOpen",
+    "value": 14,
+    "records": [
+      {
+        "id": "synthetic-issue-a",
+        "title": "Synthetic regression",
+        "labels": [
+          "bug"
+        ],
+        "createdAt": "2026-10-01T00:00:00Z"
+      },
+      {
+        "id": "synthetic-issue-b",
+        "title": "Synthetic request",
+        "labels": [
+          "enhancement"
+        ],
+        "createdAt": "2026-11-07T00:00:00Z"
+      }
+    ],
+    "input": {
+      "limit": 10
+    },
+    "normalization": "Invented normalized review fields demonstrate task logic; live provider schemas and field mappings must be reviewed separately.",
+    "expectedReviewCount": 1,
+    "asOf": "2026-11-08T00:00:00Z",
+    "normalize": {
+      "type": "elapsed-days",
+      "sourceField": "createdAt"
+    }
+  },
+  "livePolicy": {
+    "default": "preflight-only",
+    "explicitReadSelectionRequired": true,
+    "providerWritesAllowed": false,
+    "sandboxWritesRequireSeparateApproval": true
+  },
+  "baseSourceRevision": "2f1957a4bcbf3fa31780271f65666cdf691001e42948bad3383e569194283fa0",
+  "releaseVersion": "1.1.0"
+}

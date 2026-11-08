@@ -12,7 +12,7 @@
   "maintainer": "jannikco",
   "license": "MIT",
   "attributionSlug": "github-github-mcp",
-  "sourceRevision": "2f1957a4bcbf3fa31780271f65666cdf691001e42948bad3383e569194283fa0",
+  "sourceRevision": "2179869a6622866b544d1b7e813eb7512db089ab0c3b100fc007f8517a4054f6",
   "qualityVersion": 2,
   "artifactType": "connector",
   "evidence": [
@@ -30,7 +30,7 @@
   "appName": "GitHub",
   "connectorId": "github",
   "executionAuthority": "pipmcp-gateway",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "agentReady": true,
   "capabilityEvidence": {
     "local": {
